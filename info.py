@@ -31,12 +31,12 @@ DB_NAME = environ.get("DATABASE_NAME", "testing")
 ADMINS = int(environ.get("ADMINS", "0"))
 
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002987928500"))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1002935300495"))
-VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1002935300495"))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1003181116288"))
+VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1003181116288"))
 
 POST_CHANNEL = int(environ.get("POST_CHANNEL", "-1003256627889"))
-VIDEO_CHANNEL = int(environ.get("VIDEO_CHANNEL", "0"))
-BRAZZER_CHANNEL = int(environ.get("BRAZZER_CHANNEL", "0"))
+VIDEO_CHANNEL = int(environ.get("VIDEO_CHANNEL", "-1002904072157"))
+BRAZZER_CHANNEL = int(environ.get("BRAZZER_CHANNEL", "-1002819482291"))
 
 # Auth channels list
 auth_channel_str = environ.get("AUTH_CHANNEL", "-1003001351178")
@@ -54,8 +54,8 @@ PROTECT_CONTENT = str_to_bool(environ.get("PROTECT_CONTENT"), True)
 # =========================================================
 # 🔢 LIMITS
 # =========================================================
-DAILY_LIMIT = int(environ.get("DAILY_LIMIT", "5"))
-VERIFICATION_DAILY_LIMIT = int(environ.get("VERIFICATION_DAILY_LIMIT", "20"))
+DAILY_LIMIT = int(environ.get("DAILY_LIMIT", "2"))
+VERIFICATION_DAILY_LIMIT = int(environ.get("VERIFICATION_DAILY_LIMIT", "5"))
 PREMIUM_DAILY_LIMIT = int(environ.get("PREMIUM_DAILY_LIMIT", "50"))
 
 # =========================================================
@@ -71,16 +71,16 @@ TUTORIAL_LINK = environ.get("TUTORIAL_LINK", "")
 # =========================================================
 # 💳 PAYMENT SETTINGS
 # =========================================================
-UPI_ID = environ.get("UPI_ID", "")
-QR_CODE_IMAGE = environ.get("QR_CODE_IMAGE", "")
+UPI_ID = environ.get("UPI_ID", "@fam")
+QR_CODE_IMAGE = environ.get("QR_CODE_IMAGE", "https://graph.org/file/cd8a38a7faf563e66fd99-9b0d740742deeaa30a.jpg")
 
 # =========================================================
 # 🖼️ IMAGES
 # =========================================================
-START_PIC = environ.get("START_PIC", "")
-AUTH_PICS = environ.get("AUTH_PICS", "")
-VERIFY_IMG = environ.get("VERIFY_IMG", "")
-NO_IMG = environ.get("NO_IMG", "")
+START_PIC = environ.get("START_PIC", "https://graph.org/file/4f0ca88cc510abaf55420-17af2baa5b6e3acba3.jpg")
+AUTH_PICS = environ.get("AUTH_PICS", "https://graph.org/file/35f48240154fba008389a-92a97d0ffdeeaf3b0d.jpg")
+VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/7739f8b33b58b1f1ae70d-069151198434c72813.jpg")
+NO_IMG = environ.get("NO_IMG", "https://graph.org/file/c8e1dcd566967cfbd2343-71ab621eb2f766c377.jpg")
 
 # =========================================================
 # 🌐 WEB APP
